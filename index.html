@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body{
+            max-width:700px;
+            margin:0 auto;
+            padding:20px;
+            background-color:white;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+            font-family:arial;
+        }
+        h1{
+            color:darkred;
+        }
+        h2{
+            color:darkgreen;
+            border-bottom:2px solid darkred;
+            padding-bottom:5px;
+        }
+        a{
+            color:blue;
+            font-weight:bold;
+        }
+        img{
+            border-radius:50px;
+            display:block;
+            margin-bottom:15px;
+        }
+        @media (max-width: 600px) {
+            body {
+                max-width: 100%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            nav a {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+        .dark-mode {
+            background-color: #1a1a1a !important;
+            color: white !important;
+        }
+        .dark-mode h1, .dark-mode h2 {
+            color: #66d9ef !important;
+        }
+    </style>
+    <title>my portfolio</title>
+</head>
+<body>
+    <nav>
+        <a href="#home">home</a>
+        <a href="#skill">my skill</a>
+        <a href="#strength">my strength</a>
+        <a href="#projects">my projects</a>
+        <a href="#youtube">my youtube channel</a>
+        <a href="#contact">contact me</a>
+    </nav>
+
+    <h1 id="home">Hi, I'm Rishikesh Singh</h1>
+    <p style="font-size:18px; color:gray; margin-top:-10px;">BCA Student | Aspiring Software Developer | Web Developer</p>
+
+    <button onclick="sayhello()">sayhello</button>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <p id="message"></p>
+
+    <img src="https://i.postimg.cc/T3PTqVYY/Whats-App-Image-2026-07-16-at-7-27-53-AM.jpg" alt="Rishikesh Singh" width="150">
+
+    <p>I built this website while learning HTML and CSS for the first time — no templates, no shortcuts, just a lot of Googling and fixing errors until it worked. I later added JavaScript to make it interactive, like the dark mode toggle you see above.</p>
+    <p>I'm still figuring things out, but I enjoy the process of building and learning as I go.</p>
+
+    <h2 id="skill">My Skill</h2>
+    <ul>
+        <li>C Programming</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Video Editing </li>
+    </ul>
+
+    <h2 id="strength">My Strength</h2>
+    <ul>
+        <li>hardworking</li>
+        <li>Responsible</li>
+        <li>Quick Learner</li>
+        <li>Adaptable</li>
+        <li>Disciplined</li>
+        <li>Listening</li>
+    </ul>
+
+    <h2 id="projects">My Projects</h2>
+    <div>
+        <h3>Personal Portfolio Website</h3>
+        <p>Built this website from scratch using HTML, CSS, and JavaScript. Features include a responsive design, working navigation, and interactive elements like a dark mode toggle.</p>
+        <p>🔗 <a href="https://github.com/8888rishikesh-cell/8888rishikesh-cell.github.io" target="_blank">View Code on GitHub</a></p>
+    </div>
+
+    <h2 id="youtube">My Youtube Channel</h2>
+<p>▶️ YouTube: <a href="https://www.youtube.com/@TechAIDailyOfficial" target="_blank">Tech AI Daily</a></p>
+
+    <h2 id="contact">Contact Me</h2>
+    <p>📧 Email: <a href="mailto:8888rishu@gmail.com">8888rishu@gmail.com</a></p>
+    <p>💻 GitHub: <a href="https://github.com/8888rishikesh-cell" target="_blank">github.com/8888rishikesh-cell</a></p>
+    <script>
+        function sayhello(){
+            document.getElementById("message").innerHTML=("hi! thanks for visiting my portfolio.");
+        }
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
