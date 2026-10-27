@@ -1,4 +1,4 @@
-# Dose Reminde v2
+# Dose Reminder v2
 Windows VS Code terminal, inside project directory:
 ```powershell
 python -m venv .venv
