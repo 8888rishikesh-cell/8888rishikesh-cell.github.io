@@ -3,8 +3,8 @@ from pathlib import Path
 from datetime import date,datetime,time
 import streamlit.components.v1 as components
 
-DB=Path(__file__).with_name("dose_reminde.sqlite3")
-st.set_page_config(page_title="Dose Reminde",page_icon="💚",layout="wide")
+DB=Path(__file__).with_name("dose_reminder.sqlite3")
+st.set_page_config(page_title="Dose Reminder",page_icon="💚",layout="wide")
 def con():
  c=sqlite3.connect(DB,timeout=15);c.row_factory=sqlite3.Row;return c
 with con() as c:
